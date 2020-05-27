@@ -1,0 +1,188 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Corona virus Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve our database
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="country-label" for="country">Country</label>
+      <input
+        type="text"
+        name="country"
+        id="country"
+        class="form-control"
+        placeholder="Enter the country where you live"
+        required
+      />
+    </div>
+    
+    <div class="form-group">
+      <p>Which option best describes the symptoms you observe?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current symptoms</option>
+        <option value="fever,cough,shortness of breath">Fever,Cough,Shortness of breath</option>
+        <option value="Runny nose">Runny nose</option>
+        <option value="sore throat">Sore throat</option>
+  
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Are you in Quarantine currently?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Does your insurance cover the medical bills for COVID-19?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="yes">Yes</option>
+        <option value="No">No</option>
+        <option value="Maybe">Maybe</option>
+        <option value="idk">I don't know</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What preventative measures are you taking to prevent the spread of COVID-19?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Wearing Masks"
+          type="checkbox"
+          class="input-checkbox"
+        />Wearing Masks</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Washing hands"
+          type="checkbox"
+          class="input-checkbox"
+        />Washing hands</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Avoid close contact"
+          type="checkbox"
+          class="input-checkbox"
+        />Avoid close contacts</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Self-quarantine"
+          type="checkbox"
+          class="input-checkbox"
+        />Self-quarantine</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Covering while sneezing"
+          type="checkbox"
+          class="input-checkbox"
+        />Cover coughs and sneezes</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Clean and disinfect"
+          type="checkbox"
+          class="input-checkbox"
+        />Clean and disinfect</label
+      >
+     
+      
+     
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
